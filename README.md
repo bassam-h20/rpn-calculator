@@ -28,7 +28,7 @@ Components Used:
 * 64 x 32 pixel OLED screen 
 
 
-<img src="./images/Hardware.JPG" alt="My Image" width="200" align="right">
+<img src="./images/Hardware.JPG" alt="My Image" width="200" align="left">
 
 
 
