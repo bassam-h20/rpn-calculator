@@ -19,7 +19,13 @@ We have implemented a RPN calculator by using our raspberry pi 0 to manipulate o
 
 
 
-# How it works
+# Hardware components 
+
+Components Used: 
+
+* Raspberry pi zero w 
+* 4 x 4 Matrix Keypad 
+* 64 x 32 pixel OLED screen 
 
 
 
