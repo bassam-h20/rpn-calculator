@@ -106,8 +106,10 @@ The OLED screen and the keypad do work but the rasberry pi was facing connectivi
 
 <h1> UML diagram  </h1>
 
+The UML diagram provided is a basic representation of the classes and their relationships in the system. The UML diagram is intended to provide a visual overview of the system and its functionality.
 
 
+![Step 3](./images/UML.png)
 
 
 
