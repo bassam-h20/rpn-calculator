@@ -70,7 +70,7 @@ We developed several tests to examine if the infix expression converter works an
 
 
 
-<img src="./images/Test.png" alt="My Image" width="200" align="right">
+<img src="./images/Tests.png" alt="My Image" width="200" align="right">
 
 
 
