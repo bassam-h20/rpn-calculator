@@ -7,7 +7,9 @@
 By: Yousef Ali (22002656), Bassam Ali (2100000)
 ---------------------
 
-We have implemented a RPN calculator by using our raspberry pi 0 to manipulate our matrix keypad and oled screen. We have also built a library for the oled screen.
+We have implemented a RPN calculator by using our raspberry pi 0 to manipulate our matrix keypad and oled screen. We have also built a library for the oled screen. In RPN, operators are written after their operands, rather than between them like in the more familiar algebraic notation.
+
+For instance, the expression "3 + 4"  would be written as "3 4 + " in RPN notation. This means "take the number 3, then the number 4, then add them together."
 
 
 <h1 align="center"> Instructions to run </h1>
@@ -41,6 +43,8 @@ Components Used:
 <h1 align="left"> Stack Implementation  </h1>
 
 The RPN calculator uses a stack data structure to perform the calculations. The stack is initialized as an empty list at the start of the program.
+
+
 
 
 ![Step 4](./Images/Lost_submit.png)
