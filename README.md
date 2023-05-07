@@ -30,15 +30,7 @@ display.py: This module contains the code for updating the OLED display. It uses
 
 ![Step 3](./Images/flag_working.png)
 
-# Hardware components (Task 2)
 
-Components Used: 
-
-* Raspberry pi zero w 
-* 4 x 4 Matrix Keypad 
-* 64 x 32 pixel OLED screen 
-
-<img src="./images/Hardware.JPG" alt="My Image" width="200" align="center">
 
 <h1 align="left"> Stack Implementation  </h1>
 
@@ -61,7 +53,14 @@ The Stack class provides a simple and efficient way to implement a stack in Pyth
 
 
 
-![Step 4](./Images/Lost_submit.png)
+![Step 4](./images/Stack.png)
+
+
+# RPN Function Implementation
+
+The "rpn_eval" function evaluates an expression in RPN format by using a stack to keep track of the values as they are processed and applying the appropriate operations to those values as the expression is evaluated.
+
+![Step 4](./images/RPNfunction.png)
 
 
 <h1 align="left"> Written Tests  </h1>
@@ -71,6 +70,21 @@ We developed several tests to examine if the infix expression converter works an
 
 
 <img src="./images/Tests.png" alt="My Image" width="200" align="center">
+
+
+
+
+# Hardware components (Task 2)
+
+Components Used: 
+
+* Raspberry pi zero w 
+* 4 x 4 Matrix Keypad 
+* 64 x 32 pixel OLED screen 
+
+<img src="./images/Hardware.JPG" alt="My Image" width="200" align="center">
+
+
 
 
 
