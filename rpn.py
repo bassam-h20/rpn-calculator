@@ -1,34 +1,24 @@
-from main import Stack
 from sy import tokenize, shunt
 
 
+# This function evaluates an RPN expression and returns its result as an integer
 def rpn_eval(expression: str) -> int:
-    # Create a stack object to hold the values of the expression as it is evaluated
-    stack = Stack()
-    
-    # A string variable to hold the current numeric value being read in
+    stack = []  # initialize an empty list to be used as a stack
     num1 = ''
-    
-    # Loop through each character in the expression
-    for char in expression:
-        # If the character is a digit, add it to the num1 variable
-        if char.isdigit():
-            num1 += char
-            
-        # If the character is a space, check if num1 is a digit and push it onto the stack
-        if char == ' ':
-            if num1.isdigit():
-                stack.stack_push(int(num1))
-                num1 = ''
 
-        # If the character is an operator (+, -, *, /), pop two values from the stack and apply the operator
-        # The result is then pushed onto the stack
-        if char in ['+', '-', '*', '/']:
-            RV1 = stack.stack_pop()
-            RV2 = stack.stack_pop()
+    for char in expression:
+        if char.isdigit():  # if the character is a digit, add it to the current number being parsed
+            num1 += char
+        if char == ' ':  # if the character is a space, the current number is complete and can be added to the stack
+            if num1.isdigit():
+                stack.append(int(num1))
+                num1 = ''
+        if char in ['+', '-', '*', '/']:  # if the character is an operator, pop two values from the stack and apply the operator to them
+            RV1 = stack.pop()
+            RV2 = stack.pop()
 
             result = None
-            if char == '+':
+            if char == '+':  # apply the operator to the two popped values
                 result = RV2 + RV1
             elif char == '-':
                 result = RV2 - RV1
@@ -37,47 +27,47 @@ def rpn_eval(expression: str) -> int:
             elif char == '/':
                 result = RV2 / RV1
 
-            if result is not None:
-                stack.stack_push(result)
+            if result is not None:  # if the operator was applied, push the result onto the stack
+                stack.append(result)
 
-    # After the expression has been evaluated, there should be one value left on the stack.
-    # Return this value as the result of the function.
-    return stack.stack_pop()
+    return stack.pop()  # the final value remaining on the stack is the result of the expression
 
 
+# This function takes an expression as input either in infix or postfix notation. If the expression ends with a digit,
+# it is assumed to be an infix expression and is converted to RPN using the shunt function from the sy module.
+# Otherwise, the input is assumed to be in RPN format. The RPN expression is passed to the rpn_eval function which uses
+# a stack to evaluate the expression
 def evaluate_expression(expression: str):
-    # If the expression is less than two characters long, it cannot be evaluated and the function returns (False, 0)
     if len(expression) < 2:
         return (False, 0)
-    
-    # Create an empty string to hold the RPN expression
+
     rpn = ''
 
-    # If the last character of the expression is a digit, assume it is an infix expression and convert it to RPN
-    # using the shunt function from the sy module
-    if expression[-1].isdigit():
+    if expression[-1].isdigit():  # if the expression ends with a digit, assume it is in infix notation and convert it to RPN
         rpn = " ".join(shunt(tokenize(expression)))
-    # Otherwise, assume the expression is already in RPN format
     else:
-        rpn = expression
+        rpn = expression  # otherwise, assume the expression is already in RPN format
 
-    # Use the rpn_eval function to evaluate the RPN expression and catch any exceptions that may occur
     result = 0
-    
+
     try:
-        result = rpn_eval(rpn)
+        result = rpn_eval(rpn)  # evaluate the RPN expression using the rpn_eval function
     except Exception as e:
-        # If an exception is caught, print the RPN expression and the error message and return (False, -1)
         print(rpn, e)
         return (False, -1)
 
-    # If the expression is successfully evaluated, return (True, result)
-    return (True, result)
+    return (True, result)  # return a tuple containing a boolean indicating whether the expression was valid and the result
 
 
-if __name__ == '__main__':
-    # Start an infinite loop to allow the user to enter expressions to be evaluated
-    while True:
-        expression = input('Please enter your expression: ')
-        result, ans = evaluate_expression(expression)
+# This is the main loop of the program. It repeatedly asks the user to enter an expression to evaluate until the user
+# enters 'q' to quit. Each expression entered by the user is passed to the evaluate_expression function and the result
+# is printed to the console
+while True:
+    expression = input('Please enter your expression (or q to quit): ')
+    if expression == 'q':
+        break
+    result, ans = evaluate_expression(expression)
+    if result:
         print('=', ans)
+    else:
+        print('Invalid expression')
