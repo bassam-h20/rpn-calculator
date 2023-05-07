@@ -22,13 +22,13 @@ For instance, the expression "3 + 4"  would be written as "3 4 + " in RPN notati
 
 # Software (Task 1)
 
-The software for the RPN calculator is written in Python and is split into several modules:
+The software for the RPN calculator is written in Python and is split into several files:
 
-main.py: This is the main module that runs the RPN calculator. It initializes the keypad and OLED display, and then enters a loop that waits for user input. When the user enters a number or operator, the program performs the appropriate action (e.g. pushing the number onto the stack or performing the calculation) and updates the display accordingly.
+main.py: Sets up a matrix keypad and defines functions to handle input from the keypad. The input is then processed using a stack and an RPN calculator algorithm to evaluate mathematical expressions. The output is displayed on an OLED screen. The code also includes error handling for incorrect input.
 
-keypad.py: This module contains the code for reading input from the keypad. It uses the gpiozero library to listen for keypress events and maps the keys to their corresponding numbers and operators.
+rpn.py: This program evaluates mathematical expressions entered by the user in either infix or postfix notation, it uses the shunt function from the sy.py file to convert infix notation to postfix notation, and the rpn_eval function to evaluate expressions in postfix notation.
 
-display.py: This module contains the code for updating the OLED display. It uses the adafruit_ssd1306 library to create a display object and writes text to the display using the text() method.
+The check_string function takes a string as input and checks whether it is a valid expression. If the string ends with a digit, it is assumed to be in infix notation and is converted to postfix notation using the shunt function. Otherwise, the string is assumed to be in postfix notation. The resulting postfix expression is then evaluated using the rpn_eval function.
 
 
 
