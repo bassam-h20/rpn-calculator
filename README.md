@@ -44,6 +44,20 @@ Components Used:
 
 The RPN calculator uses a stack data structure to perform the calculations. The stack is initialized as an empty list at the start of the program.
 
+The simple stack implementation consists of a Python class called Stack, which initializes an empty list to store the elements of the stack. The class provides the following methods:
+
+push(val): adds an element to the top of the stack by appending it to the list.
+
+pop(): removes and returns the most recently added element from the top of the stack.
+
+size(): returns the current size of the stack by returning the length of the list.
+
+is_empty(): returns True if the stack is empty, and False otherwise.
+
+print(): prints the contents of the stack as a list.
+
+The Stack class provides a simple and efficient way to implement a stack in Python. It was used in this project to implement the RPN calculator's stack, which stores the operands and intermediate results during the calculations.
+
 
 
 
