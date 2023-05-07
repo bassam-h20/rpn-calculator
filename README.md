@@ -86,7 +86,7 @@ We developed several tests to examine if the infix expression converter works an
 
 
 
-<h1 align="right"> UML diagram  </h1>
+<h1> UML diagram  </h1>
 
 
 ![Step 2](./submit2.png)
