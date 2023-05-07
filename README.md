@@ -26,9 +26,7 @@ The software for the RPN calculator is written in Python and is split into sever
 
 main.py: Sets up a matrix keypad and defines functions to handle input from the keypad. The input is then processed using a stack and an RPN calculator algorithm to evaluate mathematical expressions. The output is displayed on an OLED screen. The code also includes error handling for incorrect input.
 
-rpn.py: This program evaluates mathematical expressions entered by the user in either infix or postfix notation, it uses the shunt function from the sy.py file to convert infix notation to postfix notation, and the rpn_eval function to evaluate expressions in postfix notation.
-
-The check_string function takes a string as input and checks whether it is a valid expression. If the string ends with a digit, it is assumed to be in infix notation and is converted to postfix notation using the shunt function. Otherwise, the string is assumed to be in postfix notation. The resulting postfix expression is then evaluated using the rpn_eval function.
+rpn.py: This program evaluates mathematical expressions entered by the user in either infix or postfix notation, it uses the shunt function from the sy.py file to convert infix notation to postfix notation, and the rpn_eval function to evaluate expressions in postfix notation. The check_string function takes a string as input and checks whether it is a valid expression. If the string ends with a digit, it is assumed to be in infix notation and is converted to postfix notation using the shunt function. Otherwise, the string is assumed to be in postfix notation. The resulting postfix expression is then evaluated using the rpn_eval function.
 
 
 
