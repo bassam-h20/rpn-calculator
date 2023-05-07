@@ -70,15 +70,5 @@ The RPN calculator uses a stack data structure to perform the calculations. The 
 
 
 
-![Step 6](./gamefunction.png)
-
-
-
-
-![Step 7](./Error1.png)
-
-
-
-
 
 
