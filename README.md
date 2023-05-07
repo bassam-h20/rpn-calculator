@@ -66,11 +66,13 @@ The Stack class provides a simple and efficient way to implement a stack in Pyth
 
 <h1 align="left"> Written Tests  </h1>
 
+![Step 5](./images/Tests.png)
 
 
 
-![Step 5](./Won.png)
 <h1 align="left"> UML diagram  </h1>
+
+
 ![Step 2](./submit2.png)
 
 
