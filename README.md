@@ -63,6 +63,12 @@ The "rpn_eval" function evaluates an expression in RPN format by using a stack t
 ![Step 4](./images/RPNfunction.png)
 
 
+
+Below is an image showing the RPN works. 
+
+![Step 4](./images/rpnworking.png)
+
+
 <h1 align="left"> Written Tests  </h1>
 
 We developed several tests to examine if the infix expression converter works and if the basic operands such as +, -, /, * work the way they should.
