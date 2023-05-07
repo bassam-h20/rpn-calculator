@@ -4,7 +4,7 @@
 
 
 
-By: Yousef Ali (22002656), Bassam Ali (2100000)
+By: Yousef Ali (22002656), Bassam Ali (21047697)
 ---------------------
 
 We have implemented a RPN calculator by using our raspberry pi 0 to manipulate our matrix keypad and oled screen. We have also built a library for the oled screen. In RPN, operators are written after their operands, rather than between them like in the more familiar algebraic notation.
@@ -16,6 +16,7 @@ For instance, the expression "3 + 4"  would be written as "3 4 + " in RPN notati
 
 
 1. Compile and Install Library: Run <mark>cd oled_lib </mark>, then run <mark>python setup.py</mark>
+2. Go back to previous directory and run <mark>cd ../</mark>
 2. Now you can run the main file using <mark>python main.py</mark>
 
 
