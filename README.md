@@ -75,7 +75,7 @@ We developed several tests to examine if the infix expression converter works an
 
 
 
-<img src="./images/Tests.png" alt="My Image" width="200" align="center">
+<img src="./images/Testspass.png" alt="My Image" width="200" align="center">
 
 
 
