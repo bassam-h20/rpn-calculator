@@ -14,12 +14,20 @@ We have implemented a RPN calculator by using our raspberry pi 0 to manipulate o
 
 
 1. Compile and Install Library: Run <mark>cd oled_lib </mark>, then run <mark>python setup.py</mark>
-2. Now you can run the main file using <mark>python main.py</mark> 
+2. Now you can run the main file using <mark>python main.py</mark>
 
 
+# Software (Task 1)
 
+The software for the RPN calculator is written in Python and is split into several modules:
 
-# Hardware components 
+main.py: This is the main module that runs the RPN calculator. It initializes the keypad and OLED display, and then enters a loop that waits for user input. When the user enters a number or operator, the program performs the appropriate action (e.g. pushing the number onto the stack or performing the calculation) and updates the display accordingly.
+keypad.py: This module contains the code for reading input from the keypad. It uses the gpiozero library to listen for keypress events and maps the keys to their corresponding numbers and operators.
+display.py: This module contains the code for updating the OLED display. It uses the adafruit_ssd1306 library to create a display object and writes text to the display using the text() method.
+
+![Step 3](./Images/flag_working.png)
+
+# Hardware components (Task 2)
 
 Components Used: 
 
@@ -35,21 +43,26 @@ Components Used:
 The RPN calculator uses a stack data structure to perform the calculations. The stack is initialized as an empty list at the start of the program.
 
 
-
-
-
-
-
-
-![Step 2](./submit2.png)
-
-![Step 3](./Images/flag_working.png)
-
 ![Step 4](./Images/Lost_submit.png)
+
+
+<h1 align="left"> Written Tests  </h1>
+
 
 
 
 ![Step 5](./Won.png)
+<h1 align="left"> UML diagram  </h1>
+![Step 2](./submit2.png)
+
+
+
+
+
+
+
+
+
 
 
 
