@@ -15,7 +15,7 @@ For instance, the expression "3 + 4"  would be written as "3 4 + " in RPN notati
 <h1 align="center"> Instructions to run </h1>
 
 
-1. Compile and Install Library: Run <mark>cd oled_lib </mark>, then compile <mark>python setup.py</mark>
+1. Compile and Install Library: Run <mark>cd oled_lib </mark>, then run <mark>python setup.py</mark>
 2. Go back to previous directory, run <mark>cd ../</mark>
 2. Now you can run the main file using <mark>python main.py</mark>
 
@@ -25,7 +25,9 @@ For instance, the expression "3 + 4"  would be written as "3 4 + " in RPN notati
 The software for the RPN calculator is written in Python and is split into several modules:
 
 main.py: This is the main module that runs the RPN calculator. It initializes the keypad and OLED display, and then enters a loop that waits for user input. When the user enters a number or operator, the program performs the appropriate action (e.g. pushing the number onto the stack or performing the calculation) and updates the display accordingly.
+
 keypad.py: This module contains the code for reading input from the keypad. It uses the gpiozero library to listen for keypress events and maps the keys to their corresponding numbers and operators.
+
 display.py: This module contains the code for updating the OLED display. It uses the adafruit_ssd1306 library to create a display object and writes text to the display using the text() method.
 
 
