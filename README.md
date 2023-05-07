@@ -84,6 +84,7 @@ Components Used:
 
 <img src="./images/Hardware.JPG" alt="My Image" width="200" align="center">
 
+The OLED screen and the keypad do work but the rasberry pi was facing connectivity issues so we could not run the program and done the tests, unfortunately the raspberrypi was refusing to connect to the internet so we could install the necessarcy libraries and headers to complete this project but we are fairly certain that the code provided with this repositry will run with no issues. 
 
 
 
