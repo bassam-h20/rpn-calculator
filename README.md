@@ -33,6 +33,11 @@ Components Used:
 
 
 
+
+
+
+
+
 ![Step 2](./submit2.png)
 
 ![Step 3](./Images/flag_working.png)
@@ -48,9 +53,6 @@ Components Used:
 ![Step 6](./gamefunction.png)
 
 
-
-
-If the user were to input anything other than "F" or "O" when asked, a message as seen below is output.
 
 
 ![Step 7](./Error1.png)
