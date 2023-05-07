@@ -71,7 +71,7 @@ Below is an image showing the RPN works.
 
 <h1 align="left"> Written Tests  </h1>
 
-We developed several tests to examine if the infix expression converter works and if the basic operands such as +, -, /, * work the way they should.
+We developed several tests to examine if the infix expression converter works and if the basic operands such as +, -, /, * work the way they should. We ran the tests using pytest to install pytest run: <mark>pip install pytest</mark> then run: <mark>pytest --capture=no Unittests.py</mark> to start the tests.
 
 
 
