@@ -36,8 +36,6 @@ Components Used:
 * Raspberry pi zero w 
 * 4 x 4 Matrix Keypad 
 * 64 x 32 pixel OLED screen 
-* Several Male to Female wires and Male to Male 
-
 
 <img src="./images/Hardware.JPG" alt="My Image" width="200" align="center">
 
