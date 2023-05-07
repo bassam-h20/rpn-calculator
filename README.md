@@ -66,6 +66,8 @@ The Stack class provides a simple and efficient way to implement a stack in Pyth
 
 <h1 align="left"> Written Tests  </h1>
 
+We developed several tests to examine if the infix expression converter works and if the basic operands such as +, -, /, * work the way they should.
+
 ![Step 5](./images/Tests.png)
 
 
