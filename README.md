@@ -92,10 +92,7 @@ The OLED screen and the keypad do work but the rasberry pi was facing connectivi
 
 
 
-
-
-
-
+![Step 3](./images/Keypad.png)
 
 
 
@@ -103,8 +100,6 @@ The OLED screen and the keypad do work but the rasberry pi was facing connectivi
 
 <h1> UML diagram  </h1>
 
-
-![Step 2](./submit2.png)
 
 
 
