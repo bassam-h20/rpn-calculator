@@ -15,8 +15,8 @@ For instance, the expression "3 + 4"  would be written as "3 4 + " in RPN notati
 <h1 align="center"> Instructions to run </h1>
 
 
-1. Compile and Install Library: Run <mark>cd oled_lib </mark>, then run <mark>python setup.py</mark>
-2. Go back to previous directory and run <mark>cd ../</mark>
+1. Compile and Install Library: Run <mark>cd oled_lib </mark>, then compile <mark>python setup.py</mark>
+2. Go back to previous directory, run <mark>cd ../</mark>
 2. Now you can run the main file using <mark>python main.py</mark>
 
 
