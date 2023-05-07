@@ -17,15 +17,15 @@ def rpn_eval(expression: str) -> int:
             RV1 = stack.pop()
             RV2 = stack.pop()
 
-            result = None
-            if char == '+':  # apply the operator to the two popped values
-                result = RV2 + RV1
-            elif char == '-':
-                result = RV2 - RV1
-            elif char == '*':
-                result = RV2 * RV1
-            elif char == '/':
-                result = RV2 / RV1
+            result = None                       
+                                                    # apply the operator to the two popped values
+            if char == '+':  result = RV2 + RV1
+            
+            elif char == '-': result = RV2 - RV1
+            
+            elif char == '*': result = RV2 * RV1
+            
+            elif char == '/': result = RV2 / RV1
 
             if result is not None:  # if the operator was applied, push the result onto the stack
                 stack.append(result)
