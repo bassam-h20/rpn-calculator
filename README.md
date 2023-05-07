@@ -28,8 +28,11 @@ Components Used:
 * 64 x 32 pixel OLED screen 
 
 
-<img src="./images/Hardware.JPG" alt="My Image" width="200" align="left">
+<img src="./images/Hardware.JPG" alt="My Image" width="200" align="center">
 
+<h1 align="left"> Stack Implementation  </h1>
+
+The RPN calculator uses a stack data structure to perform the calculations. The stack is initialized as an empty list at the start of the program.
 
 
 
