@@ -28,7 +28,7 @@ main.py: This is the main module that runs the RPN calculator. It initializes th
 keypad.py: This module contains the code for reading input from the keypad. It uses the gpiozero library to listen for keypress events and maps the keys to their corresponding numbers and operators.
 display.py: This module contains the code for updating the OLED display. It uses the adafruit_ssd1306 library to create a display object and writes text to the display using the text() method.
 
-![Step 3](./Images/flag_working.png)
+
 
 
 
